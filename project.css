@@ -1,0 +1,261 @@
+:root{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(255, 255, 255);
+
+    background-color:rgb(0, 0, 0);
+
+}
+header{
+    font-size: large;
+    /* position: fixed; */
+}
+
+
+.container{
+
+    margin: 0;
+}
+
+
+
+.hero{
+    margin: 0;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/images/IMG_3454-2000x1125.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* transition: hero 1s ease-out inherit; */
+}
+
+
+
+.hero-child{
+    position: absolute;
+    padding: 15rem;
+    text-align: center;
+    font-size: 3rem ;
+   
+}
+
+.hero-child p:last-child{
+    margin-top: 10rem ;
+}
+.anim{
+    animation: moveup 1s linear forwards;
+
+}
+@keyframes moveup {
+   0%{opacity: 0;
+    transform: translateY(100%);
+   }
+   100%{
+    opacity: 1;
+    transform: translateY(0);
+   }
+}
+.hero .hero-child h2{
+    margin-top: 25rem ;
+    font-size: 4rem ;
+}
+.hero h1{
+    font-weight: bolder;
+    font-size: 6rem;
+}
+.hero p{
+    color: rgb(252, 252, 252);
+}
+.hero p a{
+    color:rgb(0, 255, 149);
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 5rem ;
+    margin-top: 5rem;
+    padding: 2rem ;
+    
+    
+}
+.hero p a:hover{
+    color: black;
+    background-color: lightblue;
+    transition: 1s;
+}
+
+/* ////// second-part ///// */
+.second div, 
+.third div,
+.forth div,
+.fifth div{
+    /* border: 2px solid red; */
+}
+
+.second,
+.third,
+.forth,
+.fifth{
+    /* border: 2px solid white; */
+    width: 100vw;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    
+}
+.second h2,
+.third h2,
+.forth h2,
+.fifth h2{
+    font-size: 4rem;
+    color: rgb(106, 121, 87);
+    /* margin: 1rem ; */
+    text-align: center;
+    padding: 1.5rem ;
+}
+.second p,
+.third p,
+.forth p{
+    font-size: 2rem ;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+.second div:first-child,
+.forth div:first-child{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 10rem 0;
+
+}
+.second div:last-child img,
+.forth div:last-child img{
+    width: 50vw;
+}
+
+.third div:last-child{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.third div:first-child img,
+.fifth div:first-child img{
+    width: 50vw;
+}
+
+
+.fifth div:last-child{
+    margin: auto;
+}
+.fifth div table{
+   
+    font-size: 2rem ;
+   margin: auto ;
+}
+.fifth div table th{
+    padding: 0 1.2rem;
+}
+/* -============/////////============== */
+
+.booking {
+    width: 100vw;
+    text-align:  center;
+}
+.booking h1{
+    margin-top: 10rem ;
+    font-size: 5rem ;
+}
+.booking button{
+    bottom: 20rem;
+    font-size: 3rem ;
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem ;
+
+}
+.booking button a{
+    text-decoration: none;
+    color: #fff;
+}
+.booking button:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.zero {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    font-size: 3rem ;
+    margin:20rem 0 ;
+    text-align: left;
+}
+
+.zero div label{
+    display: block;
+
+}
+.zero div input{
+    display: block;
+    width: 50rem ;
+}
+.zero div select{
+    display: block;
+    width: 50rem;
+}
+/* ===============animation of main part======== */
+.animat{
+    animation: moveright 3s linear forwards;
+
+}
+@keyframes moveright {
+   0%{opacity: 0;
+    transform: translateX(0);
+   }
+   100%{
+    opacity: 1;
+    transform: translate-X(80%);
+   }
+}
+
+/* //////////====footer--===//// */
+
+.footer{
+    width: 100vw;
+    text-align: center;
+    padding: 3rem 0;
+    
+}
+
+.footer h2{
+    margin-bottom: 2.5rem ;
+    margin-top: 2rem ;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.footer p{
+    font-size: 2rem ;
+}
+
+.icons .fa-brands, .fa-solid{
+    font-size: 3rem;
+    color: #f44336;
+    margin: 0 1.3rem ;
+    cursor: pointer;
+    padding: 1.8rem 0;
+
+}
+
+.fa-heart {
+    color: #f44336;
+
+}
+
